@@ -41,7 +41,7 @@ if($connect->query($sql)) {
         <td><?php echo $record['updated_at']; ?></td>
         <td>
           <a href="#" class="btn btn-warning">Update</a>
-          <a href="#" class="btn btn-danger">Delete</a>
+          <a href="delete.php?id=<?php echo $record['id']; ?>" class="btn btn-danger">Delete</a>
         </td>
       </tr>
     <?php endforeach; ?>
